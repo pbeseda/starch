@@ -1,0 +1,136 @@
+body {
+    margin:0; padding:0;
+    overflow:hidden;
+    background-color: #2e2e2e;
+    font-weight: 300;
+    font-family: 'Source Sans Pro',
+                 'Helvetica Neue',
+                  Helvetica,
+                  Arial,
+                  sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color:#333;
+}
+
+h1 {
+    margin-top: 0;
+    border-bottom:1px dotted #252929;
+    padding-bottom:0.3em;
+    margin-bottom:0.3em;
+}
+
+a {
+    color:#4271AE;
+    text-decoration:none;
+}
+
+code, pre {
+    font-family: 'Source Code Pro',
+                 'Monaco',
+                 'Ubuntu Mono',
+                 'Courier New',
+                  Courier,
+                  monospace;
+}
+
+code {
+    font-size:12px;
+    line-height:0.95em;
+}
+
+code .literal,
+code .number  { color:#F5871F; }
+code .string  { color:#849D04; }
+code .params  { color:#C9B002; }
+code .regexp  { color:#C83C3D; }
+code .comment { color:#999999; }
+code .keyword { color:#8959A8; }
+code .title   { color:#4271AE; }
+
+.node {
+    cursor:pointer;
+}
+
+.nodetext {
+    fill:white;
+    font-size:14px;
+}
+.nodetext.shadow {
+  display: none;
+}
+
+#colony {
+    position:absolute;
+    z-index:1;
+    overflow: hidden;
+}
+
+#readme {
+    position:absolute;
+    z-index:2;
+    top: 0; right: 0;
+    width: 25%;
+    height: 100%;
+    min-width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#readme.enlarged {
+    width:100%;
+}
+.enlarged #readme-contents {
+    margin-left:2em;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#readme-contents {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.89);
+    color:#555959;
+    overflow: hidden;
+    padding: 2em;
+    margin: 0;
+    margin-left:0;
+
+    line-height: 2em;
+
+    -webkit-transition: background-color 0.5s, margin 0.5s;
+       -moz-transition: background-color 0.5s, margin 0.5s;
+        -ms-transition: background-color 0.5s, margin 0.5s;
+         -o-transition: background-color 0.5s, margin 0.5s;
+            transition: background-color 0.5s, margin 0.5s;
+}
+#readme-contents.showing-code {
+    color:#252929;
+}
+
+#readme-contents img {
+  max-width:100%;
+}
+
+.showing-code pre {
+    margin:0;
+    width:100%;
+    white-space: pre;
+}
+
+.showing-code pre > code {
+    font-size:11px;
+}
+
+#footer {
+    position:absolute;
+    width: 60%;
+    bottom:10px;
+    left: 10px;
+    overflow: hidden;
+    color: white;
+    z-index: 999;
+}
